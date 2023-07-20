@@ -15,7 +15,6 @@ import org.junit.Before;
 
 public class BaseTest {
 
-    protected static String getBookingsPath = "/bookings";
     protected static String bookingPath = "/booking";
 
     private static String BASE_URL = "https://restful-booker.herokuapp.com";
@@ -25,11 +24,11 @@ public class BaseTest {
         RestAssured.baseURI = BASE_URL;
     }
 
-    public int createTestBooking(String firstName, String lastName) throws ParseException {
+    public int createTestBooking(String firstName) throws ParseException {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Booking testBooking = new Booking(
             firstName, 
-            lastName, 
+            "some-last-name", 
             200, 
             true, 
             dateFormat.parse("2023-01-01"), 

@@ -16,7 +16,6 @@ To run this project, you need the following prerequisites:
 1. Clone the project to your local machine.
 2. Navigate to the project directory.
 3. Run the tests using Maven. (Or your preferred IDE).
-The below command allow to generate allure reports as well.
 
 ```bash
 mvn clean test

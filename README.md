@@ -15,11 +15,23 @@ To run this project, you need the following prerequisites:
 
 1. Clone the project to your local machine.
 2. Navigate to the project directory.
-3. Run the tests using Maven. (Or your preferred IDE)
+3. Run the tests using Maven. (Or your preferred IDE).
+The below command allow to generate allure reports as well.
 
 ```bash
-mvn test
+mvn clean test
 ```
+
+## Test report
+
+To enhance the visualization of test results, we can utilize Allure to generate comprehensive test reports:
+
+```bash
+mvn clean test -Dallure.results.directory=./target/allure-results
+mvn allure:serve 
+```
+
+![Allure report](assets/allure.png)
 
 ## Project Structure
 

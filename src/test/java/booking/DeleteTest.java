@@ -1,7 +1,6 @@
 package booking;
 
 import io.restassured.response.Response;
-import model.PartialBooking;
 import specifications.RequestSpecs;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

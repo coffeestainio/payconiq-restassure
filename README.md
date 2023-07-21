@@ -33,6 +33,11 @@ mvn allure:serve
 
 ![Allure report](assets/allure.png)
 
+## Continues Integration
+
+The project is setup to run on every push to main. A disclamer here, is that based on the test architecture that I have defined this tests should be executed on demand
+once the _booker_ service starts it's own release pipeline.
+
 ## Project Structure
 
 ```plain
@@ -68,3 +73,5 @@ mvn allure:serve
 - The test scenarios cover basic functionality, but there is potential for improvement by adding more complex data payloads and edge cases.
 - Some functions include comments to explain the decision-making process behind the framework used.
 - Certain tests were disabled due to issues with the scenarios they test, or they might not fully comply with RESTful API standards. These tests are excluded to maintain the integrity of the test suite.
+- Some tests assertions can be improved.
+- I also would recommend using json schema validation as a complement to data validation from endpoints.

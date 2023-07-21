@@ -1,4 +1,4 @@
-# payconiq-restassure
+# Payconiq REST-assured Assessment
 
 Java API Testing framework built with JUnit and  and REST-Assured
 
@@ -21,7 +21,7 @@ To run this project, you need the following prerequisites:
 mvn clean test
 ```
 
-## Test report
+## Test Report
 
 To enhance the visualization of test results, we can utilize Allure to generate comprehensive test reports:
 
@@ -32,7 +32,7 @@ mvn allure:serve
 
 ![Allure report](assets/allure.png)
 
-## Continues Integration
+## Continuous Integration
 
 The project is setup to run on every push to main. A disclamer here, is that based on the test architecture that I have defined this tests should be executed on demand
 once the _booker_ service starts it's own release pipeline.
@@ -75,6 +75,6 @@ once the _booker_ service starts it's own release pipeline.
 - Some tests assertions can be improved.
 - I also would recommend using json schema validation as a complement to data validation from endpoints.
 
-## Test strategy
+## Test Strategy
 
 The test strategy document as well as system design and releae process pipeline assets can be found in the `/docs` folder as requested

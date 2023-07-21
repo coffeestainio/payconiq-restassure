@@ -3,6 +3,8 @@ package booking;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import io.qameta.allure.junit5.AllureJunit5;
+import org.junit.jupiter.api.extension.ExtendWith;
 import model.Booking;
 import specifications.RequestSpecs;
 
@@ -15,6 +17,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 import helpers.DataHelper;
 
+@ExtendWith(AllureJunit5.class)
 public class BaseTest {
     
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");

@@ -74,3 +74,7 @@ once the _booker_ service starts it's own release pipeline.
 - Certain tests were disabled due to issues with the scenarios they test, or they might not fully comply with RESTful API standards. These tests are excluded to maintain the integrity of the test suite.
 - Some tests assertions can be improved.
 - I also would recommend using json schema validation as a complement to data validation from endpoints.
+
+## Test strategy
+
+The test strategy document as well as system design and releae process pipeline assets can be found in the `/docs` folder as requested

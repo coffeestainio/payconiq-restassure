@@ -1,23 +1,8 @@
 package helpers;
 
 import java.util.Random;
-
 import model.AuthUser;
-// import java.util.Random;
-
 public class DataHelper {
-
-    // public static String generateRandomEmail(){
-    //     return String.format("%s@testemail.com" , generateRandomString(7));
-    // }
-
-    // public static String generateRandomTitle(){
-    //     return String.format("%s" , generateRandomString(7));
-    // }
-
-    // public static String generateRandomContent(){
-    //     return String.format("%s" , generateRandomString(100));
-    // }
 
     public static String generateRandomName(){
         return String.format("%s" , generateRandomString(7));
